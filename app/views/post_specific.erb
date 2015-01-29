@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Show Specific post!</h1>
+
+  <center><table>
+    <tr>
+      <th>Post Id</th>
+      <th>Post Title</th>
+      <th>Post Description</th>
+      <th>Action</th>
+    </tr>
+    <tr>
+        <td><%=@data.id%></td>
+        <td><%=@data.title%></td>
+        <td><%=@data.description%></td>
+        <td><a href="/posts/edit/<%=@data.id%>">Edit</a> | <a href="/posts/delete/<%=@data.id%>">Delete</a></td>
+    </tr>
+  </table>
+</center>
+<a href="/posts">Back</a>
+</div>

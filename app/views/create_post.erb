@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>Create Post!</h1>
+<form action="/posts/edit" method="post">
+  <center><table>
+    <tr>
+      <th>Post Title:</th>
+      <td><input type="text" name="title_input"></td>
+    </tr>
+    <tr>
+      <th>Post Description:</th>
+      <td><input type="text" name="desc_input"></td>
+    </tr>
+    <tr>
+      <th>Tag:</th>
+      <td><select name="tag_input">
+        <%@tag.each do |x|%>
+            <option value="<%=x.id%>"><%=x.name%></option>
+            <%end%>
+      </select></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><input type="submit" value="Submit"</td>
+    </tr>
+  </table>
+</center>
+</form>
+<a href="/posts">Back</a>
+</div>
+

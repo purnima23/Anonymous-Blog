@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Show all post!</h1>
+
+  <center><table>
+    <tr>
+      <th>Post Title</th>
+    </tr>
+    <% @tagsall.each do |x|%>
+    <tr>
+        <td>
+          <a href="/tags/<%=x.id%>"><%=x.name%></a></td>
+    </tr>
+    <%end%>
+  </table>
+</center>
+</div>

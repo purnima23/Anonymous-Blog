@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Show all post!</h1>
+
+  <center><table>
+    <tr>
+      <th>Post Title</th>
+    </tr>
+    <% @all.each do |x|%>
+    <tr>
+        <td>
+          <a href="/posts/<%=x.id%>"><%=x.title%></a></td>
+    </tr>
+    <%end%>
+  </table>
+</center>
+<a href="/posts/create">Create New Post</a>
+</div>

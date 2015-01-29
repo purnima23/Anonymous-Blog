@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>Delete post!</h1>
+<form action="/posts/delete/<%=@data.id%>" method="post">
+  <center><table>
+    <tr>
+        <th>Post Id:</th>
+        <td><%=@data.id%></td>
+    </tr>
+    <tr>
+        <th></th>
+      <td><input type="hidden" name="_method" value="delete">
+</td>
+    </tr>
+    <tr>
+        <th>Post Title</th>
+        <td><%=@data.title%></td>
+    </tr>
+    <tr>
+        <th>Post Description</th>
+        <td><%=@data.description%></td>
+    </tr>
+    <tr>
+        <th></th>
+        <td><input type ="submit" value="Delete"> </td>
+    </tr>
+  </table>
+</center>
+</form>
+<a href="/posts">Back</a>
+</div>
